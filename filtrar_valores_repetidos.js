@@ -7,7 +7,8 @@ for (var i = 0; i < totalItems; i++) { //iterador
   let itensOrdenados = itens.split(" ").sort(); // ordena em ordem alfabetica com sort
   let itensUnicos = itensOrdenados.filter( function(element, index, self) {
     return index == self.indexOf(element);
-  }); // Implemente aqui a lógica para ter os itens unicos
+  }); 
+  
   let resposta = [...itensUnicos].join(" ");
   console.log(resposta);
 }
